@@ -183,6 +183,11 @@ public class NearItUserProfile {
                 }
 
                 @Override
+                public void setUsePoolThread(boolean pool) {
+                    super.setUsePoolThread(false);
+                }
+
+                @Override
                 public void onFailureUnique(int statusCode, Header[] headers, Throwable throwable, String responseString) {
                     listener.onDataNotSetError("network error: " + statusCode);
                 }
