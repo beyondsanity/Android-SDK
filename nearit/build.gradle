@@ -96,6 +96,18 @@ android {
             consumerProguardFiles 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        go {
+        }
+        dev {
+        }
+    }
+
+    publishNonDefault true
+
+    defaultPublishConfig "goRelease"
+
     lintOptions {
         abortOnError false
     }
