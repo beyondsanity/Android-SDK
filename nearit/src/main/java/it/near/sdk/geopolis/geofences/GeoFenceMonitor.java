@@ -25,6 +25,7 @@ import java.util.List;
 
 import it.near.sdk.geopolis.GeopolisManager;
 import it.near.sdk.geopolis.Node;
+import it.near.sdk.geopolis.location.LocationUpdatesReceiver;
 import it.near.sdk.logging.NearLog;
 import it.near.sdk.utils.AppVisibilityDetector;
 

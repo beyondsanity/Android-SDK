@@ -39,7 +39,7 @@
         </receiver>
 
         <receiver
-            android:name=".geopolis.geofences.LocationUpdatesReceiver"
+            android:name=".geopolis.location.LocationUpdatesReceiver"
             android:exported="false" />
         <!-- receiver for auto-tracking the ENGAGED status -->
         <receiver
