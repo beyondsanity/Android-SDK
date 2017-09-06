@@ -29,8 +29,11 @@ public class TreeLevel {
         Node node = fetchNode(id);
         // TODO se è nullo il nodo non è contnuto nel livello attuale. E' un errore grave e non recuperabile. Super reset?
         if (node == null) return false;
+        // enter in parent: ignore
         if (node == parent && GEOFENCE_ENTER.equals(event)) return false;
+        // exit from children: ignore
         if (children.contains(node) && GEOFENCE_EXIT.equals(event)) return false;
+        // everything else is a real event
         return true;
     }
 
